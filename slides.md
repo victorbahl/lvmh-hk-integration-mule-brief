@@ -61,6 +61,7 @@ You are split into two teams. Use `team-1` or `team-2` as a prefix in all your n
 | **Anypoint Org access** | Credentials will be provided — make sure you can log in |
 | **VS Code** | Installed and up to date |
 | **Anypoint Code Builder Extension Pack** | Installed in VS Code |
+| **Claude account** | Required for Claude Code |
 | **Claude Code Extension** | Installed in VS Code |
 | **Claude Desktop** (or similar MCP client) | To test and demo your deployed MCPs |
 
@@ -73,7 +74,7 @@ You are split into two teams. Use `team-1` or `team-2` as a prefix in all your n
 | | Step | What | Tool suggested |
 |---|---|---|---|
 | 🌉 | **1** | Create an MCP Bridge on top of the REST APIs | MuleSoft MCP Bridge |
-| 🛠️ | **2** | Vibe-code a MuleSoft MCP Server on top of the Database | Claude Code |
+| 🛠️ | **2** | Vibe-code a MuleSoft MCP Server on top of the Database | Claude Code / MuleSoft Vibes |
 | 🚀 | **3** | Deploy to Anypoint Platform | MuleSoft Vibes |
 | 🧪 | **4** | Test — the agent queries all three systems in one interaction | Claude Desktop |
 | 🔒 | **Bonus A** | Apply data masking policies on the Order API | Anypoint Platform + MuleSoft Vibes |
@@ -221,15 +222,25 @@ graph LR
 
 # 🌉 Step 1 — Create the MCP Bridge
 
-Use Anypoint Platform's **API Manager** to create an MCP Bridge on top of the **Order API** and **Fulfillment API**.
+<div class="grid grid-cols-[1fr_1fr] gap-8 items-start mt-2">
+<div>
 
-This exposes both REST APIs as MCP-compatible endpoints — no code required. The bridge automatically translates API specs into tools an AI agent can discover and call.
+**In API Manager**, create an MCP Bridge on top of the **Order API** and **Fulfillment API**.
 
-<v-click>
+Browse each API spec and **select which endpoints to expose as tools** — not every endpoint needs to be agent-callable. Pick the ones that make sense for the use case.
 
-> Name it `team-n-order-mcp`
+The bridge translates your selection into MCP-compatible tools — no code required.
 
-</v-click>
+</div>
+<div class="flex flex-col items-center justify-start">
+  <img src="/screenshot-mcp-bridge.png" alt="MCP Bridge UI" class="rounded-lg shadow-xl border border-gray-200" style="max-height: 200px; object-fit: contain;" />
+  <span style="font-size: 0.6em; color: var(--light-gray); margin-top: 6px;">Selecting endpoints in the MCP Bridge UI</span>
+</div>
+</div>
+
+<p style="margin-top: 16px; font-size: 0.78em; color: var(--mid-gray);">
+📖 <a href="https://docs.mulesoft.com/api-manager/latest/create-instance-task-mcp-bridge" target="_blank" style="color: var(--gold);">MCP Bridge documentation</a>
+</p>
 
 ---
 
