@@ -1,0 +1,152 @@
+/* LVMH Tech Hackathon — Integration / MuleSoft */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --black: #0A0A0A;
+  --charcoal: #1A1A1A;
+  --warm-gray: #2C2926;
+  --mid-gray: #6B6560;
+  --light-gray: #B8B2AA;
+  --cream: #F5F0EB;
+  --warm-white: #FAF8F5;
+  --gold: #C4A265;
+  --gold-light: #D4B87A;
+
+  --mulesoft-blue: #00A1DF;
+  --claude-orange: #D97757;
+
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'DM Sans', -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+/* Base */
+.slidev-layout {
+  font-family: var(--font-body);
+  color: var(--charcoal);
+  background: var(--warm-white);
+}
+
+/* Headings */
+.slidev-layout h1 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  color: var(--black);
+  letter-spacing: -0.01em;
+}
+
+.slidev-layout h2 {
+  font-family: var(--font-body);
+  font-weight: 400;
+  color: var(--mid-gray);
+  font-size: 1.1em;
+  letter-spacing: 0.02em;
+}
+
+/* Tables */
+.slidev-layout table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.slidev-layout table th {
+  text-align: left;
+  font-size: 0.7em;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--mid-gray);
+  padding: 0.5em 1em;
+  border-bottom: 2px solid var(--charcoal);
+  background: transparent;
+}
+
+.slidev-layout table td {
+  padding: 0.55em 1em;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  font-size: 0.88em;
+  color: var(--warm-gray);
+}
+
+.slidev-layout table td strong {
+  color: var(--charcoal);
+}
+
+.slidev-layout table tr:hover td {
+  background: var(--cream);
+}
+
+/* Blockquotes */
+.slidev-layout blockquote {
+  border-left: 3px solid var(--gold);
+  padding-left: 1em;
+  background: var(--cream);
+  padding: 0.8em 1.2em;
+  border-radius: 0 5px 5px 0;
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+}
+
+.slidev-layout blockquote p {
+  color: var(--warm-gray);
+  font-style: italic;
+}
+
+/* Strong */
+.slidev-layout strong {
+  color: var(--charcoal);
+  font-weight: 600;
+}
+
+/* Inline code */
+.slidev-layout code:not(pre code) {
+  background: var(--cream);
+  color: var(--charcoal);
+  padding: 0.15em 0.4em;
+  border-radius: 3px;
+  font-size: 0.85em;
+  font-family: var(--font-mono);
+}
+
+/* Links */
+.slidev-layout a {
+  color: var(--gold);
+  text-decoration: none;
+}
+
+/* Lists */
+.slidev-layout li::marker {
+  color: var(--gold);
+}
+
+.slidev-layout ol li::marker {
+  color: var(--charcoal);
+  font-weight: 600;
+}
+
+.slidev-layout li {
+  color: var(--warm-gray);
+  margin-bottom: 0.3em;
+}
+
+/* Gold accent line (used on section tags) */
+.section-tag {
+  font-size: 0.65em;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 0.3em;
+}
+
+/* v-click transitions */
+.slidev-vclick-target {
+  transition: all 0.4s ease;
+}
+
+/* Mermaid */
+.mermaid {
+  font-family: var(--font-body) !important;
+}
