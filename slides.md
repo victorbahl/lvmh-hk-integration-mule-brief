@@ -33,6 +33,19 @@ Your mission: make Order Management <strong style="color: #C4A265;">agent-ready<
 
 ---
 
+# Prerequisites
+
+| Requirement | Details |
+|---|---|
+| **Anypoint Org access** | Credentials will be provided — make sure you can log in |
+| **VS Code** | Installed and up to date |
+| **Anypoint Code Builder Extension Pack** | Installed in VS Code |
+| **Claude account** | Required for Claude Code |
+| **Claude Code Extension** | Installed in VS Code |
+| **Claude Desktop** (or similar MCP client) | To test and demo your deployed MCPs |
+
+---
+
 # The Challenge
 
 ## Two APIs. One Database. Agent-Ready via MCPs.
@@ -49,18 +62,7 @@ You are split into two teams. Use `team-1` or `team-2` as a prefix in all your n
 | **📦 Fulfillment API** | 🌐 REST API | Shipment and delivery status — tracking number, carrier, estimated delivery |
 | **🗄️ Product Catalog** | 🛢 DB | Product details — name, description, category, price, images |
 
----
 
-# Prerequisites
-
-| Requirement | Details |
-|---|---|
-| **Anypoint Org access** | Credentials will be provided — make sure you can log in |
-| **VS Code** | Installed and up to date |
-| **Anypoint Code Builder Extension Pack** | Installed in VS Code |
-| **Claude account** | Required for Claude Code |
-| **Claude Code Extension** | Installed in VS Code |
-| **Claude Desktop** (or similar MCP client) | To test and demo your deployed MCPs |
 
 ---
 hide: true
@@ -117,7 +119,6 @@ graph LR
 ```
 
 ---
-zoom: 0.95
 clicks: 6
 ---
 
