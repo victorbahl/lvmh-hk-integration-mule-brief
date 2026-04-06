@@ -175,9 +175,9 @@ layout: two-cols-header
 # 🌉 Step 1 — Create the MCP Bridge
 **Tool**: API Manager > MCP Bridge
 
-**In API Manager**, create an MCP Bridge on top of the **Order API** and **Fulfillment API**.
-
 ::left::
+
+**In API Manager**, create an MCP Bridge on top of the **Order API** and **Fulfillment API**.
 
 Browse each API spec and **select which endpoints to expose as tools** — not every endpoint needs to be agent-callable. Pick the ones that make sense for the use case.
 
@@ -190,6 +190,7 @@ Deploy it on the **Ingress Flex Gateway** provided in your environment.
 ::right::
 
 ![Selecting endpoints in the MCP Bridge UI](/screenshot-mcp-bridge.png)
+<sub>Selecting endpoints in the MCP Bridge UI</sub>
 
 ---
 layout: two-cols-header
@@ -246,11 +247,15 @@ Try different prompt strategies — iterate and refine.
 
 Experiment with what works best.
 
-> Hint: Claude is great at general Mule code, but newer components (like MCP) may not be in its training data. You could ask it to **search the web for examples** before generating unfamiliar syntax.
+> Claude is great at general Mule code, but newer components (like MCP) may not be in its training data.
+
+> Hint: You could ask it to **search the web for examples** before generating unfamiliar syntax.
 
 ::right::
 
 ![Claude Code in VS Code](/screenshot-claude-code.png)
+<sub>Claude Code in VS Code with MuleSoft Extension Pack</sub>
+
 
 ---
 layout: two-cols-header
@@ -379,7 +384,7 @@ Compare the before and after.
 ---
 layout: image-right
 image: /showtime.png
-zoom: 0.8
+zoom: 0.75
 ---
 
 # 🎤 Show & Tell

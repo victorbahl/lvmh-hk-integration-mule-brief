@@ -227,6 +227,13 @@
   filter: brightness(0) invert(1);
 }
 
+/* Content images — screenshots in slides */
+.slidev-layout img:not(.cover-logo-lvmh):not(.cover-logo-mulesoft) {
+  border-radius: 4px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.10);
+}
+
+
 /* Call-to-action heading */
 .cta-gold {
   color: var(--gold);
