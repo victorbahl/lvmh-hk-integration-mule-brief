@@ -349,7 +349,7 @@ In production, that could be a problem.
 
 <v-clicks>
 
-1. Create an **API proxy** of the Order API in API Manager
+1. Create an **API proxy** of the Order API in API Manager. Use the **label** to identify your team.
 2. Apply a **data masking policy** on the proxy using MuleSoft Vibes
 3. Update your **MCP Bridge routing** to point to the proxy instead of the original API
 4. Test that sensitive field is masked in the agent's response
